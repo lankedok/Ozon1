@@ -43,4 +43,9 @@ public class WorkWithOzon {
         return $(By.xpath("//a[@href='/cart']"));
     }
 
+    public static SelenideElement passForTrash() {
+        return  $(By.xpath("//a[@class='title']/span"));
+    }
+
+
 }

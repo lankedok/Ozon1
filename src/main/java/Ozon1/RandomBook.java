@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class RandomBook {
     public static String randomBookPassTrash = "div/div/button[contains(@class, 'buy-text-button')]";
+    public static String passForName = ".//a[@data-test-id='tile-name']";
     public static ElementsCollection allBooksPass() {
         return $$(By.xpath("//div[@class='tile-wrapper']"));
     }
