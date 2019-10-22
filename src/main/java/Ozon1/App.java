@@ -37,9 +37,10 @@ public class App
         book.find(By.xpath(RandomBook.randomBookPassTrash)).click();
         String name = book.find(By.xpath(RandomBook.passForName)).getText();
         Thread.sleep(5000);
-        if  (book.find(By.xpath(RandomBook.randomBookPassTrash)).isDisplayed()) {
-            System.out.println("botton is here");
-        } else System.out.println("botton is't here");
+        book.find(By.xpath(RandomBook.randomBookPassTrash)).shouldHave();
+     // if  (book.find(By.xpath(RandomBook.randomBookPassTrash)).shouldHave(Condition.disappear)) {
+     //     System.out.println("botton is here");
+     // } else System.out.println("botton is't here");
 
         WorkWithOzon.trash().click();
 
